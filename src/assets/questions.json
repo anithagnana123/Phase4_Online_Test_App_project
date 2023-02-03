@@ -1,0 +1,25 @@
+{
+"questions": [
+  {
+    "questionno": "1.",
+    "question": "Who invented Java Programming?",
+    "option1": "a) Guido van Rossum",
+    "option2": "b) James Gosling",
+    "option3": "c) Dennis Ritchie"
+  },
+  {
+    "questionno": "2.",
+    "question": "Which statement is true about Java?",
+    "option1": "a) Java is a sequence-dependent programming language",
+    "option2": "b) Java is a code dependent programming language",
+    "option3": "c) Java is a platform-independent programming language"   
+  },
+  {
+    "questionno": "3.",
+    "question": "Which one of the following is not a Java feature?",
+    "option1": "a) Object-oriented",
+    "option2": "b) Use of pointers",
+    "option3": "c) Portable"
+  }
+]
+}

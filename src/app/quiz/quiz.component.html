@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">
+<h2>Choose the correct answer</h2>
+<h4>1. Who invented Java Programming?</h4>
+<label>
+  <input type="radio"  value="q1option1" name="q1options" [(ngModel)]="readioSelected"> a) Guido van Rossum
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q1option2" name="q1options" [(ngModel)]="readioSelected"> b) James Gosling
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q1option3" name="q1options" [(ngModel)]="readioSelected"> c) Dennis Ritchie
+</label>
+
+
+
+<h4>2. Which statement is true about Java?</h4>
+<label>
+  <input type="radio"  value="q2option1" name="q2options" [(ngModel)]="readioSelected1"> a) Java is a sequence-dependent programming language
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q2option2" name="q2options" [(ngModel)]="readioSelected1"> b) Java is a code dependent programming language
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q2option3" name="q2options" [(ngModel)]="readioSelected1"> c) Java is a platform-independent programming language
+</label>
+
+<h4>3. Which one of the following is not a Java feature?</h4>
+<label>
+  <input type="radio"  value="q3option1" name="q3options" [(ngModel)]="readioSelected2"> a) Object-oriented
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q3option2" name="q3options" [(ngModel)]="readioSelected2"> b) Use of pointers
+</label>
+<br/>
+<label>
+  <input type="radio"  value="q3option3" name="q3options" [(ngModel)]="readioSelected2"> c) Portable
+</label>
+<br/>
+<p>
+<button type="button"class="btn btn-success" (click)="showReview()">Review</button>&nbsp;
+<button type="button"class="btn btn-success"> <a routerLink="/submit"> Submit</a></button>
+</p>
+
+</div>
+
+
+<div *ngIf="showreview1 !='q1option1' && showreview1 !='q1option2' && showreview1 !='q1option3'" >
+  Question 1 is not answered
+  </div>
+  
+  <div *ngIf="showreview2 !='q2option1' && showreview2 !='q2option2' && showreview2 !='q2option3'" >
+    Question 2 is not answered
+  </div>
+  
+  <div *ngIf="showreview3 !='q3option1' && showreview3 !='q3option2' && showreview3 !='q3option3'" >
+      Question 3 is not answered
+  </div>
+
+</body>
+</html>
